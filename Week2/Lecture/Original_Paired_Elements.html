@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- Option Element -->
+    <select name='santas-list'>
+        <option value='' selected>Please Select</option>
+        <option value='s1234567'>Alice Liddell</option>
+        <option value='s1234568'>Bob D&apos;Builder</option>
+        <option value='s1234569'>Carol Singers</option>
+    </select>
+    <br>
+
+    <select name='santas-list[]' size='3' multiple>
+        <option value=''>Please Select</option>
+        <option value='s1234567'>Alice Liddell</option>
+        <option value='s1234568'>Bob D&apos;Builder</option>
+        <option value='s1234569'Carol Singers</option>
+   </select>
+   <br>
+
+   <!-- Outgroup Element -->
+   <select name='santas-list'>
+        <option value=''>Please Select</option>
+        <optgroup label='naughty'>
+            <option value='s1234567'>Alice Liddell</option>
+        </optgroup>
+        <optgroup label='nice'>
+            <option value='s1234568'>Bob D&apos;Builder</option>
+            <option value='s1234569' >Carol Singers</option>
+        </optgroup>
+    </select>
+    <br>
+
+    <!-- Textarea Element -->
+    <textarea cols='80' rows='9'>
+        This is where the textarea value is ...
+        If you want to put text ... at these instructions!
+        What else can I tell you? ... row and col settings.
+    </textarea>
+    <br>
+
+    <!-- Fieldset Element -->
+    <!-- The <fieldset> element has a child <legend> element (not a simple caption attribute, that would be too logical!) which describes the input elements you have grouped. -->
+    <fieldset>
+        <legend>About You</legend>
+        <p>Firstname:<br>
+            <input type='text' name='firstname' /></p>
+        <p>Lastname:<br>
+            <input type='text' name='lastname' /></p>
+        ...
+    </fieldset>
+    <br>
+
+    <!-- Label Element -->
+    <!-- In addition to label attributes, there are also <label> elements which make a form more usable by extending the "click" area of an input to an associated label. This is very useful when dealing with physically small inputs such as radio and checkbox elements. -->
+    <input type=radio id='Hillary' name='prez'/> <label for='Hillary'>Clinton</label>
+    <input type=radio id='Bernard' name='prez'/> <label for='Bernard'>Sanders</label>
+    <input type=radio id='Edward'  name='prez'/> <label for='Edward' >Cruz...</label>
+    <input type=radio id='Donald'  name='prez'/> <label for='Donald' >Trump!!</label>
+    <br>
+
+    <!-- Types: color, date, range -->
+    <input type='color' name='mycolor' value='#BADA55' />
+    <input type='date' name='dateofbirth' value='1998-01-01' />
+    <input type='range' name='percent' value='50' />
+    <br>
+
+    <!-- Datalist element and list attribute -->
+    <!-- At the time of writing, the <datalist> element is not implemented in Safari. It contains empty <option> elements that have value attributes.The <datalist> element needs to have an id attribute which the <input> element references: -->
+    <input  list='students' name='myentry' />
+    <datalist id='students'>
+        <option value='Alice Liddell'>s1234567</option>
+        <option value='Bob D&apos;Builder'>s1234568</option>
+        <option value='Carol Singers'>s1234569</option>
+    </datalist>
+    <br>
+
+    <!-- Attributes: placeholder & autocomplete -->
+    <!-- If using your personal computer, your browser may suggest your first name in the first field and suggest nothing in the second field. -->
+    <input type='text' name='firstname' placeholder='First Name'/> <br>
+    <input type='text' name='firstname' placeholder='First Name' autocomplete='off'/> <br>
+
+    <!-- Attributes: min, max & step -->
+    <!-- Choose an integer between 1 and 10: -->
+    <input type='number' min='1' max='10' step='1'/> <br>
+
+    <!-- Choose an odd integer between 11 and 111:-->
+    <input type='number' min='11' max='111' step='2'/> <br>
+
+
+
+
+</body>
+</html>

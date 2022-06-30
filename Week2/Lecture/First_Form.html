@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>My First Form</h1>
+    <!-- action: which is the where the data is being sent -->
+    <!-- method: which is how the data is being sent -->
+        <!-- 1) GET -->
+        <!-- 2) POST -->
+        <!-- 4) UPDATE -->
+        <!-- 5) DELETE -->
+    <!-- enctype: which is how the data is encoded -->
+    <form action="app/processing.php" method="=get" target="_blank">
+        <!-- name: the name input, transmitted to the processing input-->
+        <p>1) Firstname (blank): <br> <input type="text" name="firstname1" value=""></p> 
+        <p>2) Firstname ("Steve"): <br> <input type="text" name="firstname2" value="Steve"></p>
+        <p>3) Firstname (readonly):<br><input type='text' name='firstname3' value='Steve' readonly /></p>
+        <p>4) Firstname (disabled):<br><input type='text' name='firstname4' value='Steve' disabled /></p>
+        <p><input type="submit" name="submit" value="submit"></p>
+
+        <input type='radio' name='gender' value='male' />Male,
+        <input type='radio' name='gender' value='female' />Female,
+        <input type='radio' name='gender' value='other' />Other.
+
+        <input type='checkbox' name='seeks[]' value='male' />Male,
+        <input type='checkbox' name='seeks[]' value='female' />Female,
+        <input type='checkbox' name='seeks[]' value='other' />Other.
+
+        <input type='file' name='assignment' />
+    </form>
+</body>
+</html>
