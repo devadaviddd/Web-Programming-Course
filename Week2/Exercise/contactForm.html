@@ -9,49 +9,71 @@
 </head>
 <body>
     <!-- Contact Form -->
-    <form action="">
-        <!-- Purpose of contact: viewers can select either "Business" or "Personal" (use <select> element) -->
-        <select name="santas-list">
-            <option value="" selected>Please Select</option>
-            <option value="">Business</option>
-            <option value="">Personal</option>
-        </select>
-        <br>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Go Back</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <!-- Name: a text field where viewers can enter their names (at most 50 characters) -->
-        <input type="text" placeholder="Name:" name="username" maxlength="50" autocomplete="off" required> <br>
+    <main>
+        <form action="">
+            <!-- Purpose of contact: viewers can select either "Business" or "Personal" (use <select> element) -->
+            <select name="santas-list">
+                <option value="" selected>Please Select</option>
+                <option value="">Business</option>
+                <option value="">Personal</option>
+            </select>
+            <br>
+    
+            <!-- Name: a text field where viewers can enter their names (at most 50 characters) -->
+            <input type="text" placeholder="Name:" name="username" maxlength="50" autocomplete="off" required> <br>
+    
+            <!-- Email: a text field where viewers can enter their email addresses (a valid email address is required) -->
+            <input type="email" placeholder="Email" required name="email" autocomplete="off"><br>
+    
+            <!-- Phone: a text field where viewers can enter their phone numbers (only numbers are allowed) -->
+            <input type="number" placeholder="Phonenumber" name="phoneNumber" autocomplete="off"><br>
+    
+            <!-- Preferred contact method: a group of 2 radio boxes where viewers can select either "Email" or "Phone" -->
+            <input type="radio" id="Email" name="contactMethod" value="email" ><label for="Email">Email</label> <br>
+            <input type="radio" id="Phone" name="contactMethod" value="phone" ><label for="Phone">Phone</label> <br>
+    
+            <!-- Contact day(s): a group of 7 check boxes from Monday to Sunday -->
+            <p>Contact days: <br>
+                <input type="checkbox" id="monday" name="monday" value="Monday"><label for="monday">Monday</label> <br>
+                <input type="checkbox" id="tuesday" name="tuesday" value="tuesday"><label for="tuesday">Tuesday</label> <br>
+                <input type="checkbox" id="wed" name="wed" value="wed"><label for="wed">Wednesday</label> <br>
+                <input type="checkbox" id="thu" name="thu" value="thu"><label for="thu">Thursday</label> <br>
+                <input type="checkbox" id="fri" name="monday" value="Monday"><label for="monday">Monday</label> <br>
+                <input type="checkbox" id="sat" name="sat" value="sat"><label for="sat">Saturday</label> <br>
+                <input type="checkbox" id="sun" name="sun" value="sun"><label for="sun">Sunday</label> <br>
+            </p>
+    
+            <!-- Attachment: a file upload field -->
+            <input type="file" name="fileUpload"> <br>
+    
+            <!-- Message: textarea element -->
+            <textarea name="fieldOfText"  cols="30" rows="10"></textarea><br>
+            
+            <!-- Media embed -->
+            <iframe src="https://rmiteduau-my.sharepoint.com/personal/tri_dangtran_rmit_edu_vn/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Ftri%5Fdangtran%5Frmit%5Fedu%5Fvn%2FDocuments%2FRecordings%2FCOSC2430%2D20220627%5F142941%2DMeeting%20Recording%2Emp4&parent=%2Fpersonal%2Ftri%5Fdangtran%5Frmit%5Fedu%5Fvn%2FDocuments%2FRecordings&ga=1" frameborder="0"></iframe> <br>
+    
+    
+            <button type="submit">Send</button>
+            <button type="reset">Clear</button>
+    
+        </form>
+    </main>
 
-        <!-- Email: a text field where viewers can enter their email addresses (a valid email address is required) -->
-        <input type="email" placeholder="Email" required name="email" autocomplete="off"><br>
-
-        <!-- Phone: a text field where viewers can enter their phone numbers (only numbers are allowed) -->
-        <input type="number" placeholder="Phonenumber" name="phoneNumber" autocomplete="off"><br>
-
-        <!-- Preferred contact method: a group of 2 radio boxes where viewers can select either "Email" or "Phone" -->
-        <input type="radio" id="Email" name="contactMethod" value="email" ><label for="Email">Email</label> <br>
-        <input type="radio" id="Phone" name="contactMethod" value="phone" ><label for="Phone">Phone</label> <br>
-
-        <!-- Contact day(s): a group of 7 check boxes from Monday to Sunday -->
-        <p>Contact days: <br>
-            <input type="checkbox" id="monday" name="monday" value="Monday"><label for="monday">Monday</label> <br>
-            <input type="checkbox" id="tuesday" name="tuesday" value="tuesday"><label for="tuesday">Tuesday</label> <br>
-            <input type="checkbox" id="wed" name="wed" value="wed"><label for="wed">Wednesday</label> <br>
-            <input type="checkbox" id="thu" name="thu" value="thu"><label for="thu">Thursday</label> <br>
-            <input type="checkbox" id="fri" name="monday" value="Monday"><label for="monday">Monday</label> <br>
-            <input type="checkbox" id="sat" name="sat" value="sat"><label for="sat">Saturday</label> <br>
-            <input type="checkbox" id="sun" name="sun" value="sun"><label for="sun">Sunday</label> <br>
-        </p>
-
-        <!-- Attachment: a file upload field -->
-        <input type="file" name="fileUpload"> <br>
-
-        <!-- Message: textarea element -->
-        <textarea name="fieldOfText"  cols="30" rows="10"></textarea><br>
-
-
-        <button type="submit">Send</button>
-        <button type="reset">Clear</button>
-
-    </form>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="index.html">Go Back</a></li>
+            </ul>
+        </nav>
+    </footer>
+    
 </body>
 </html>
