@@ -1,0 +1,47 @@
+/*  An <ol> contains 4 <li>. Display the first <li> in red, the last <li> in blue, and other <li> in green.*/
+
+ol li:first-child {
+    color: red;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+}
+
+ol li:last-child {
+    color: blue;
+}
+
+ol li {
+    color: green;
+}
+
+/* There are 3 paragraphs. Display the first line of the first paragraph with a pink background. Display the first line of the 2nd and 3rd paragraphs in a light blue color. */
+
+#first-paragraph::first-line {
+    color: pink;
+}
+
+#second-paragraph::first-line {
+    color: blue;
+}
+
+#third-paragraph::first-line {
+    color: blue;
+}
+
+/* When a text in a paragraph is selected, its background color changes to yellow.
+ */
+p::selection {
+    background-color: yellow;
+}
+
+/* Create a form with 3 input fields: email, phone, and name. Add the "required" attribute to email and name. Apply different background colors for those 2 required fields. */
+#username {
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    color: white;
+}
+
+#email {
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+    color: white;
+}
