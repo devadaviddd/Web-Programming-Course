@@ -1,10 +1,10 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Form</title>
+    <title>Contact Us</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -18,7 +18,8 @@
     </header>
 
     <main>
-        <form action="">
+        <h2>Contact Us</h2>
+        <form method="post" accept="exercise1.html" enctype="multipart/form-data"> 
             <!-- Purpose of contact: viewers can select either "Business" or "Personal" (use <select> element) -->
             <select name="santas-list">
                 <option value="" selected>Please Select</option>
@@ -28,13 +29,16 @@
             <br>
     
             <!-- Name: a text field where viewers can enter their names (at most 50 characters) -->
-            <input type="text" placeholder="Name:" name="username" maxlength="50" autocomplete="off" required> <br>
+            <label for="username">Username</label> <br>
+            <input type="text" placeholder="Name:" name="username" maxlength="50" autocomplete="off" required id="username"> <br>
     
             <!-- Email: a text field where viewers can enter their email addresses (a valid email address is required) -->
-            <input type="email" placeholder="Email" required name="email" autocomplete="off"><br>
+            <label for="email">Email</label> <br>
+            <input type="email" placeholder="Email" required name="email" autocomplete="off" id="email"><br>
     
             <!-- Phone: a text field where viewers can enter their phone numbers (only numbers are allowed) -->
-            <input type="number" placeholder="Phonenumber" name="phoneNumber" autocomplete="off"><br>
+            <label for="phone">Enter your phone number: </label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{0,13}"><br>
     
             <!-- Preferred contact method: a group of 2 radio boxes where viewers can select either "Email" or "Phone" -->
             <input type="radio" id="Email" name="contactMethod" value="email" ><label for="Email">Email</label> <br>
@@ -58,11 +62,11 @@
             <textarea name="fieldOfText"  cols="30" rows="10"></textarea><br>
             
             <!-- Media embed -->
-            <iframe src="https://rmiteduau-my.sharepoint.com/personal/tri_dangtran_rmit_edu_vn/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Ftri%5Fdangtran%5Frmit%5Fedu%5Fvn%2FDocuments%2FRecordings%2FCOSC2430%2D20220627%5F142941%2DMeeting%20Recording%2Emp4&parent=%2Fpersonal%2Ftri%5Fdangtran%5Frmit%5Fedu%5Fvn%2FDocuments%2FRecordings&ga=1" frameborder="0"></iframe> <br>
+            <iframe src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4" frameborder="0"></iframe> <br>
     
     
-            <button type="submit">Send</button>
-            <button type="reset">Clear</button>
+            <button type="submit" name="submit">Send</button>
+            <button type="reset" name="reset">Clear</button>
     
         </form>
     </main>
@@ -76,4 +80,4 @@
     </footer>
     
 </body>
-</html>
+</html> -->

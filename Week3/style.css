@@ -1,0 +1,52 @@
+/* Headings (h1, h2, etc.) have the same color but different shades. Use the biggest font size for h1, the second biggest for h2, and so on */
+
+h1 {
+    color: red;
+    font-size: larger;
+}
+
+h2 {
+    color: red;
+    font-size: smaller;
+
+}
+
+/* In the navigation bar, display the active item differently than other items */
+li.active a{
+    text-decoration: none;
+    font-weight: bold;
+    
+}
+
+/* The navigation item color in the hovering state should be different from the normal state */
+li a:hover {
+    color: orange;
+}
+
+/* The paragraph in the "Career statement" part should be formatted differently than paragraphs in job-description divs */
+
+.statement {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+
+#experience p {
+    background-color: black;
+    color: white;
+    padding: 20px 0;
+    width: 50%;
+    text-align: center;
+    border-radius: 10px;
+}
+
+/* Background colors of even rows and odd rows of the "education" table are different */
+#education table tr:nth-child(even) {
+    background-color: #ccc;
+}
+
+#education table tr:nth-child(odd) {
+    background-color: #fff;
+}
