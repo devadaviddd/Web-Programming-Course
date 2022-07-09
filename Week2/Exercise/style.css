@@ -65,4 +65,72 @@ h1::before {
 }
 
 
+.description {
+    padding: 10px;
+    background-color: rgb(233, 233, 152);
+    border: solid white 3.5px;
+    border-radius: 15px;
+    margin-top: 10px;
+    position: relative;
+}
 
+.description ol {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.description ol li {
+    font-weight: bold;
+    margin: 10px 15px;
+    padding: 5px;
+    background-color: rgb(222, 162, 172);
+    width: 50%;
+    box-shadow: rgb(38, 57, 77) 10px 10px 5px;
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 2s;
+    -moz-animation: fadeIn 2s;
+    -o-animation: fadeIn 2s;
+    -ms-animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@-moz-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@-webkit-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@-o-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@-ms-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+footer {
+    position: absolute;
+    top: 15%;
+    right: 29.1%;
+    background-color: red;
+    z-index: -1;
+    width: min-content;
+    padding:300px 0;
+    padding-right: 20px;
+    border-radius: 15px;
+}
