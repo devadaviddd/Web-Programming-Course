@@ -1,5 +1,4 @@
 /* Headings (h1, h2, etc.) have the same color but different shades. Use the biggest font size for h1, the second biggest for h2, and so on */
-
 h1 {
     color: red;
     font-size: larger;
@@ -11,16 +10,37 @@ h2 {
 
 }
 
+* {
+    box-sizing: border-box;
+}
+
+nav ul {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    /* align-items center the y axis */
+    align-items: center; 
+
+    /* center the x axis */
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 10px;
+    list-style: none;
+}
+
 /* In the navigation bar, display the active item differently than other items */
-li.active a{
-    text-decoration: none;
+li a{
     font-weight: bold;
-    
+    text-decoration: none;
+    line-height: 20px;
 }
 
 /* The navigation item color in the hovering state should be different from the normal state */
 li a:hover {
     color: orange;
+    font-size: large;
 }
 
 /* The paragraph in the "Career statement" part should be formatted differently than paragraphs in job-description divs */
