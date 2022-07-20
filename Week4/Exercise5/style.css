@@ -1,0 +1,53 @@
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+
+}
+
+header {
+    background-color: bisque;
+}
+
+main {
+    display: grid;
+    grid-template-columns: auto auto;
+
+}
+.tablet {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+
+main div {
+    height: fit-content;
+    background-color: rgb(189, 165, 165);
+    border: 2px solid aqua;
+    text-align: center;
+}
+
+footer {
+    margin-top: 10px;
+    background-color: rgb(131, 131, 202);
+}
+
+@media  (min-width: 768px) and (max-width: 1023px) {
+    .tablet {
+        display: grid;
+        grid-template-columns: auto;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .tablet {
+        display: flex;
+        flex-direction: column;
+    }
+}

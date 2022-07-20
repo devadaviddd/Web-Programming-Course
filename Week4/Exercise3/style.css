@@ -1,0 +1,15 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    height: 300px;
+    width: 300px;
+    background-image: url("download.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+}

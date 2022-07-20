@@ -1,0 +1,45 @@
+header, footer {
+    width: 100vw;
+    background-color: red;
+
+}
+
+header {
+    position: sticky;
+    top: 0;
+    margin-bottom: 300px;
+    
+}
+
+* {
+    margin: 0;
+}
+
+#main {
+    display: flex;
+    flex-direction: row;
+}
+
+#left {
+    width: 30vw;
+    min-width: 200px;
+    background-color: aqua;
+}
+
+main {
+    width: 55vw;
+    background-color: yellow
+}
+
+#right {
+    width: 15vw;
+    background-color: aqua;
+}
+
+/* header {
+    margin-bottom: 10px;
+} */
+
+footer {
+    margin-top: 10px;
+}
